@@ -53,7 +53,7 @@ textarea {
   resize: none;
 }
 
-section {
+.wrap {
   width: 400px;
   padding: 50px;
   margin: 60px auto;
@@ -62,7 +62,7 @@ section {
   box-shadow: 5px 5px 10px rgba(173, 189, 193, 0.4);
 }
 
-section .menu::after {
+section .menu .menuSide::after {
   content: "";
   display: block;
   clear: both;
@@ -86,6 +86,33 @@ section .menu::after {
 .wrap .menu > a:hover {
   color: #2E64FE;
   transform: scale(1.1);
+}
+.wrap .menuSide {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  background: lightslategray;
+  opacity: 0.5;
+  position: fixed;
+  top: -400px;
+  transition: 0.5s;
+}
+.wrap .menuSide.on {
+  top: 50px;
+  transform: translateY(-50%);
+}
+.wrap .menuSide.on li {
+  width: 100%;
+}
+.wrap .menuSide.on li a {
+  position: relative;
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  padding-left: 30px;
+  padding-top: 5px;
 }
 .wrap .profile {
   width: 100%;
