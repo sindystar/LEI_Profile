@@ -79,7 +79,7 @@ resize: none;
         height: 20px;
         font-size: 20px;
         color: #555;
-        margin-bottom: 30px;
+        margin-top: -5px;
         float: right;// padding: 10px;
         transition: 0.5s;
         &:hover {
@@ -92,15 +92,15 @@ resize: none;
     .menuSide{
       position: relative;
       width: 300px;
-      height:100px;
+      height:120px;
       background: lightslategray;
       opacity: 0.5;
       position: fixed;
-      top: -100px;
+      top: -200px;
       // left: -200px;
       transition: 0.5s;
       &.on {
-        top: 210px;
+        top: 220px;
         transform: translateY(-50%);
         z-index: 10;
 
@@ -113,27 +113,37 @@ resize: none;
             font-weight: 500;
             font-size: 12px;
             color: #fff;
+            text-indent: 10px;
             padding-left: 30px;
-            padding-top: 5px;
-            
-            >i {
-              position: relative;
-              display: block;
-              width: 20px;
-              height: 20px;
-              font-size: 20px;
-              color: #555;
-              margin-bottom: 30px;
-              float: right;// padding: 10px;
-              transition: 0.5s;
-              &:hover {
-                color: #2E64FE;
-                transform: scale(1.1);
-              }
-            }
+            padding-top: 10px;
+            transition: 0.5s;
+            &:hover {
+              color: blue;
+              
+            }            
           }          
         }
       }      
+    }
+    a {
+      span {
+        i{
+          position: relative;
+          display: block;
+          width: 20px;
+          height: 20px;
+          font-size: 20px;
+          color: #555;
+          margin-bottom: 30px;
+          float: left;
+          transition: 0.5s;
+          &:hover {
+            color: #2E64FE;
+            transform: scale(1.1);
+          }
+        }
+        
+      }
     }
     
 
