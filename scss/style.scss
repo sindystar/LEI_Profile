@@ -70,7 +70,24 @@ resize: none;
     clear: both;
   }
   .wrap {
-    
+    .menu {
+      >a {
+        position: relative;
+        // position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        color: #555;
+        margin-bottom: 30px;
+        float: right;// padding: 10px;
+        transition: 0.5s;
+        &:hover {
+          color: #2E64FE;
+          transform: scale(1.1);
+        }
+      }   
+    }
 
     .menuSide{
       position: relative;
@@ -79,11 +96,11 @@ resize: none;
       background: lightslategray;
       opacity: 0.5;
       position: fixed;
-      top: -400px;
+      top: -100px;
       // left: -200px;
       transition: 0.5s;
       &.on {
-        top: 230px;
+        top: 210px;
         transform: translateY(-50%);
         z-index: 10;
 
@@ -118,22 +135,7 @@ resize: none;
         }
       }      
     }
-    .menu {
-      >a {
-        display: block;
-        width: 20px;
-        height: 20px;
-        font-size: 20px;
-        color: #555;
-        margin-bottom: 30px;
-        float: right;// padding: 10px;
-        transition: 0.5s;
-        &:hover {
-          color: #2E64FE;
-          transform: scale(1.1);
-        }
-      }   
-    }
+    
 
     
     .profile {
