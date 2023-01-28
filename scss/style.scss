@@ -92,7 +92,7 @@ resize: none;
     .menuSide{
       position: relative;
       width: 300px;
-      height:120px;
+      height:150px;
       background: lightslategray;
       opacity: 0.5;
       position: fixed;
@@ -100,7 +100,7 @@ resize: none;
       // left: -200px;
       transition: 0.5s;
       &.on {
-        top: 220px;
+        top: 235px;
         transform: translateY(-50%);
         z-index: 10;
 

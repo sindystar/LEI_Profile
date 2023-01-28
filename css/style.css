@@ -86,7 +86,7 @@ section .menu .menuSide::after {
 .wrap .menuSide {
   position: relative;
   width: 300px;
-  height: 120px;
+  height: 150px;
   background: lightslategray;
   opacity: 0.5;
   position: fixed;
@@ -94,7 +94,7 @@ section .menu .menuSide::after {
   transition: 0.5s;
 }
 .wrap .menuSide.on {
-  top: 220px;
+  top: 235px;
   transform: translateY(-50%);
   z-index: 10;
 }
