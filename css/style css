@@ -68,20 +68,38 @@ section .menu .menuSide::after {
   clear: both;
 }
 
-.wrap .menu > a {
-  position: relative;
+.wrap .menu .Coding_Manual {
+  position: absolute;
   display: block;
   width: 20px;
   height: 20px;
-  font-size: 20px;
-  color: #555;
   margin-top: -5px;
   float: right;
-  transition: 0.5s;
+  transition: 0.3s;
 }
-.wrap .menu > a:hover {
+.wrap .menu .Coding_Manual i {
+  position: relative;
+  font-size: 20px;
+  color: #555;
+}
+.wrap .menu .Coding_Manual::before {
+  content: "Coding_Manual";
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-size: 120px;
+  font-weight: 700;
+  position: absolute;
+  top: 12px;
+  transform: translateX(-4px);
+  opacity: 0;
+  transition: 0.3s;
+}
+.wrap .menu .Coding_Manual:hover {
   color: #2E64FE;
   transform: scale(1.1);
+}
+.wrap .menu .Coding_Manual:hover::before {
+  opacity: 1;
 }
 .wrap .menuSide {
   position: relative;
