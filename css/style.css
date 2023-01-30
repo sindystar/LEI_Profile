@@ -75,13 +75,14 @@ section .menu .menuSide::after {
   height: 20px;
   margin-top: 0px;
   float: right;
+  opacity: 0.5;
   transition: 0.3s;
 }
 .wrap .menu .Coding_Manual i {
   position: relative;
   float: right;
   font-size: 20px;
-  color: #555;
+  color: #333;
 }
 .wrap .menu .Coding_Manual::before {
   content: "Coding_Manual";
@@ -90,14 +91,15 @@ section .menu .menuSide::after {
   font-size: 12px;
   font-weight: 700;
   position: absolute;
-  top: 12px;
+  top: 8px;
   transform: translatey(-30px);
   opacity: 0;
   transition: 0.3s;
 }
 .wrap .menu .Coding_Manual:hover {
-  color: #2E64FE;
-  transform: scale(1.1);
+  color: 333;
+  opacity: 1;
+  transform: scale(1.2);
 }
 .wrap .menu .Coding_Manual:hover::before {
   opacity: 1;
@@ -124,7 +126,7 @@ section .menu .menuSide::after {
   position: relative;
   display: block;
   font-family: "Lato", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 12px;
   color: #fff;
   text-indent: 10px;
@@ -141,14 +143,16 @@ section .menu .menuSide::after {
   width: 20px;
   height: 20px;
   font-size: 20px;
-  color: #555;
+  color: #333;
+  opacity: 0.5;
   margin-bottom: 30px;
   float: left;
   transition: 0.5s;
 }
 .wrap a span i:hover {
-  color: #2E64FE;
-  transform: scale(1.1);
+  color: #333;
+  opacity: 1;
+  transform: scale(1.2);
 }
 .wrap .profile {
   width: 100%;
@@ -198,7 +202,7 @@ section .menu .menuSide::after {
 }
 .wrap .contact {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 .wrap .contact li {
   width: 100%;
@@ -224,7 +228,7 @@ section .menu .menuSide::after {
   transform: scale(1.2);
 }
 .wrap .contact li a > span {
-  padding-left: 30px;
+  padding-left: 35px;
   font-family: "Lato", sans-serif;
   color: #555;
   font-weight: 400;
