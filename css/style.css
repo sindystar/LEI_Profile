@@ -99,7 +99,6 @@ section .menu .menuSide::after {
 .wrap .menu .Coding_Manual:hover {
   color: 333;
   opacity: 1;
-  transform: scale(1.2);
 }
 .wrap .menu .Coding_Manual:hover::before {
   opacity: 1;
